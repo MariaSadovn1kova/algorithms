@@ -1,5 +1,6 @@
+// https://www.codewars.com/kata/5526fc09a1bbd946250002dc
+
 let readline = require("readline");
-let x;
 let rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
@@ -7,13 +8,8 @@ let rl = readline.createInterface({
 });
 rl.prompt();
 rl.on("line", (input) => {
-  let arrayStr = input.split(" ");
-  for (let i = 0; i < arrayStr.length; i++) {
-    if (arrayStr[i].length > 4) {
-      x = arrayStr[i].split("");
-      arrayStr[i] = x.reverse().join("");
-    }
-  }
-  console.log(arrayStr.join(" "));
+  let num = input;
+
+  console.log(result);
   rl.close();
 });
